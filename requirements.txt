@@ -1,0 +1,6 @@
+# Core runtime: AssemblyAI Universal-Streaming SDK (v3 API, verified 2026-09-24)
+assemblyai>=1.5,<2
+
+# Optional extras, needed only for live microphone mode / spoken replies:
+#   pip install pyaudio   # mic capture (Linux: apt install portaudio19-dev first)
+#   pip install pyttsx3   # offline TTS (Linux: apt install espeak-ng)
