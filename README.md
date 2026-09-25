@@ -84,6 +84,17 @@ python main.py
 Speak; the agent replies out loud and saves the lead to `leads.csv`.
 Use `--no-tts` to print replies instead of synthesizing speech.
 
+### 4. Live API mode without a microphone
+
+```bash
+python live_demo.py call.pcm   # 16 kHz PCM16 mono file
+```
+
+Streams an audio file to the real Universal-Streaming API as if it were the
+microphone — same code path as mic mode, for machines with no audio hardware
+and for reproducible demo recordings. Writes the captured lead, a transcript,
+and a timestamped event log to `demo-output/`.
+
 ### Optional: LLM extraction
 
 Set `LLM_API_KEY` (plus `LLM_BASE_URL` / `LLM_MODEL`) in `.env` to upgrade
